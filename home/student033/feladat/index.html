@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weboldal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="uzenet.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#fooldal">Főoldal</a></li>
+                <li><a href="#oop">OOP-Javascript</a></li>
+                <li><a href="#uzenetek">Üzenetek</a></li>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
+                <li><a href="#crud">CRUD</a></li>
+                <li><a href="#adatbazis">Adatbázis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fooldal">
+            <h1>Érettségi vizsga</h1>
+            <p>Az érettségi vizsga (röviden érettségi, régiesen matura) a középiskolai tanulmányokat lezáró és a
+                felsőoktatásba bebocsátó vizsga, amely számos ország jogrendszerében szerepel, és sok helyen – így a
+                kétszintű érettségi bevezetése óta a legtöbb képzésben Magyarországon is – a felsőoktatási felvételi
+                eljárásban is helyettesíti a vizsgát.</p>
+            <p>Az érettségi történetét e három funkció közötti hangsúlyeltolódások és az ekörüli vita kíséri; helyét az
+                oktatásügyben és társadalmi megbecsültségét az aktuális főfunkció is alakítja.</p>
+            <img src="images/1.jpg" alt="érettségi" />
+            <p>A képesítő vizsga, egy speciális, szakmai tantárgyak sikeres érettségi vizsgája után, az ágazatnak
+                megfelelő szakképesítést biztosított. 1998-ig adtak ki ilyen bizonyítványokat. Ezután már nem volt
+                szakmai érettségi a szakközépiskolákban, csak OKJ-s képzések.</p>
+            <p>Magyarországon 1851 óta rendeznek érettségi vizsgát, jelenleg országosan egységes szabályozás szerint. A
+                legutóbbi nagyobb átalakítás a kétszintű érettségi rendszer bevezetése volt 2005-ben. Azóta a vizsga
+                minden tekintetben egységes a gimnáziumok és a szakközépiskolák tanulói, illetve a felnőttoktatásban
+                részt vevők számára is. Az érettségi hazánkban állami vizsga, az érettségi bizonyítvány pedig közokirat
+            </p>
+            <h1>A magyarországi érettségi rövid története</h1>
+            <p>Az érettségit először 1788-ban Poroszországban vezették be, hogy korlátozzák az egyetemre jelentkezők
+                számát. Franciaországban 1808-ban, Angliában pedig 1838-ban kezdték átvenni. Magyarországon Comenius már
+                a 17. században felvetette egy érettségiszerű záróvizsga szükségességét:</p>
+            <img src="images/2.jpg" alt="érettségi2" />
+            <p>Ebben az idézetben már felbukkan az állami érdek; az érettségit a kezdetektől kísérő vita központi
+                kérdése a 19. században az állami beavatkozás jogossága az iskolák és a fenntartók önállóságába, a
+                tanszabadságba. Ez az állami befolyás Mária Terézia uralkodása idején vált kifejezetté (1764-ben a
+                Tanügyi Bizottság létrehozásával s 1777-ben a Ratio Educationis kibocsátásával). Az érettségi ugyanis
+                nemcsak a tanulmányokat lezáró és a felsőoktatásba bebocsátó vizsga, hanem állami szintű, egységesítő
+                kimeneti szabályozás is. Célja lehet az állami érdekek érvényesítése, a felsőoktatásba való bejutás
+                szabályozása vagy a köztisztviselői, hivatalnoki állásra pályázók minősítése (ez utóbbi célból Kínában
+                már régóta rendeztek állami vizsgákat).</p>
+        </section>
+
+    <!-------------------------------------------------------------------------------------------->
+        <section id="oop">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Todo App</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+
+                .task {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 5px;
+                }
+
+                .task.completed {
+                    text-decoration: line-through;
+                }
+            </style>
+
+            <h1>Todo App</h1>
+            <div>
+                <input type="text" id="taskInput" placeholder="Add a new task">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <ul id="taskList"></ul>
+
+            <script src="app.js"></script>
+        </section>
+
+    <!-------------------------------------------------------------------------------------------->
+        <section id="uzenetek">
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                }
+
+                th,
+                td {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #f4f4f4;
+                }
+            </style>
+            <h1>Üzenetek</h1>
+            <table id="messagesTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Üzenetek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Az üzenetek dinamikusan ide kerülnek -->
+                </tbody>
+            </table>
+            <script src="uzenetek.js"></script>
+        </section>
+
+    <!-------------------------------------------------------------------------------------------->  
+       <section id="kapcsolat">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                    padding: 20px;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                }
+
+                textarea {
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    font-size: 16px;
+                }
+
+                button {
+                    padding: 10px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            </style>
+            <h1>Üzenetküldő</h1>
+            <form id="messageForm" method="POST">
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Írd ide az üzeneted..." required></textarea>
+                <button type="submit" id="submit">Küldés</button>
+            </form>
+            <div id="response" style="margin-top: 20px; color: green;"></div>
+
+            <script src="uzenetkuldo.js"></script>
+       </section>
+
+       <!-------------------------------------------------------------------------------------------->
+        <section id="crud">
+            <h1>CRUD</h1>
+        <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                }
+
+                th,
+                td {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #f4f4f4;
+                }
+            </style>
+           <!-- Új vizsgázó hozzáadása -->
+            <form id="addForm">
+                <input type="number" id="azon" placeholder="Azonosító" required>
+                <input type="text" id="name" placeholder="Név" required>
+                <input type="text" id="class" placeholder="Osztály" required>
+                <button type="submit">Hozzáadás</button>
+            </form>
+            <!-- Vizsgázók megjelenítése -->
+            <table id="vizsgazoTable">
+                <thead>
+                    <tr>
+                        <th>Azon</th>
+                        <th>Név</th>
+                        <th>Osztály</th>
+                        <th>Műveletek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dinamikusan töltődő tartalom -->
+                </tbody>
+            </table>
+
+            <script src="crud.js"></script>
+       </section>
+
+       <!-------------------------------------------------------------------------------------------->
+       <section id="adatbazis">
+           <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                }
+
+                th,
+                td {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #f4f4f4;
+                }
+            </style>
+            
+                <h1>Vizsgázók eredményei</h1>
+
+                <!-- Tantárgy kiválasztása -->
+                <label for="tantargySelect">Válassz tantárgyat:</label>
+                <select id="tantargySelect">
+                    <option value="">Válassz tantárgyat...</option>
+                </select>
+
+                <!-- Eredmények táblázat -->
+                <table id="eredmenyTable">
+                    <thead>
+                        <tr>
+                            <th>Vizsgázó Neve</th>
+                            <th>Tantárgy</th>
+                            <th>Szóbeli Eredmény</th>
+                            <th>Írásbeli Eredmény</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dinamikusan töltődik -->
+                    </tbody>
+                </table>
+
+                <script src="lekerdezes.js"></script>
+       </section>
+    </main>
+</body>
+</html>
